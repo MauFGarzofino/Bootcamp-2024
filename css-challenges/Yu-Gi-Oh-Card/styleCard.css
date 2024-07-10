@@ -1,3 +1,7 @@
+html {
+    font-size: 16px; 
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -5,6 +9,17 @@ body {
     background-color: #191d1c;
     margin: 0;
     height: 100vh;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .card-container {
@@ -85,15 +100,15 @@ body {
 .card-description {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    justify-content: center;
     align-items: start;
+    justify-content: space-between;
     width: 100%;
     padding: 5px;
     border: 4px solid  #947266;
     background-color: #dbc2b4;
     font-size: 0.8rem;
     box-sizing: border-box;
+    min-height: 150px;
     flex: 1 1 auto;
 }
 
@@ -106,13 +121,12 @@ body {
     font-style: italic;
     text-align: start;
     justify-content: start;
-    padding-bottom: 20px;
+    flex: 1; 
 }
 
 .card-stats {
     display: flex;
     justify-content: flex-end;
-    justify-content: baseline;
     width: 100%;
     border-top: 1px solid #1d1b1b;
     background-color: #dbc2b4;
@@ -126,4 +140,14 @@ body {
 
 .value {
     padding-left: 10px;
+}
+
+.card-type-iconDM {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #6f00ff; 
+    border-radius: 50%;
 }
