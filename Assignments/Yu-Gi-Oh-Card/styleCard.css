@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191d1c;
+    margin: 0;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    min-height: 485px;
+    border: 8px solid rgba(43,50,61,255);
+    background-color: #ae7f61;
+    font-family: 'Didact Gothic', sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.card-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4rem; 
+    width: 100%;
+    flex: 0 1 auto; 
+    border-top: 2px solid #c39b82;
+    border-left: 2px solid #c39b82;
+    border-right: 2px solid #5d392a;
+    border-bottom: 2px solid #5d392a;
+}
+
+.card-type-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #714940; 
+    border-radius: 50%;
+}
+
+.star-levels {
+    display: flex;
+    justify-content: flex-end;
+    width: 98%;
+    padding-right: 10px;
+    flex: 0 1 auto;
+}
+
+.star {
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    clip-path:polygon(79.39% 90.45%,50.00% 69.00%,20.61% 90.45%,31.93% 55.87%,2.45% 34.55%,38.83% 34.63%,50.00% 0.00%,61.17% 34.63%,97.55% 34.55%,68.07% 55.87%);
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%; 
+    flex: 1 1 auto;
+}
+
+.card-image img {
+    width: 90%;
+    height: 100%;
+    border-top: 4px solid #69788a;
+    border-left: 4px solid #69788a;
+    border-right: 4px solid #525e75;
+    border-bottom: 4px solid #525e75;
+    object-fit: cover;
+}
+
+.card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    padding: 5px;
+    border: 4px solid  #947266;
+    background-color: #dbc2b4;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+}
+
+.monster-type {
+    font-weight: bold;
+    text-align: center;
+}
+
+.monster-description {
+    font-style: italic;
+    text-align: start;
+    justify-content: start;
+    padding-bottom: 20px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: flex-end;
+    justify-content: baseline;
+    width: 100%;
+    border-top: 1px solid #1d1b1b;
+    background-color: #dbc2b4;
+    flex: 0 1 auto; 
+}
+
+.stat, .value {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.value {
+    padding-left: 10px;
+}
