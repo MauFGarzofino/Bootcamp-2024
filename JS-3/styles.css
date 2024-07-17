@@ -42,7 +42,31 @@ body {
 
 .pokemon-image {
   max-width: 300px;
-  margin: 20px 0;
+  margin: 10px 0;
+}
+
+.hints-container {
+  text-align: center;
+}
+
+.hint-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hint-icon {
+  width: 30px; 
+  height: 30px;
+  display: block;
+  margin: 10px auto;
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #333;
 }
 
 .choices {
@@ -74,7 +98,8 @@ button#next-pokemon, button#start-game {
   background-color: #1b1c1c;
   color: #fff;
   font-size: 18px;
-  outline:hwb(from color h w b);
+  outline: none;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
@@ -85,8 +110,8 @@ button#next-pokemon:hover, button#start-game:hover {
   background-color: #302f2f;
 }
 
-.search-container button:hover {
-  background-color: #606060;
+.no-hints {
+  color: red;
 }
 
 .success {
