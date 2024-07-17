@@ -154,12 +154,14 @@ function startGame() {
 }
 
 function showHint() {
+    const noMoreHints = hintsContainer.querySelector('.no-hints');
+    
     if (hintIndex < currentPokemon.hints.length) {
         const hintParagraph = document.createElement('p');
         hintParagraph.textContent = currentPokemon.hints[hintIndex];
         hintsContainer.appendChild(hintParagraph);
         hintIndex++;
-    } else {
+    } else if (!noMoreHints) {
         const hintParagraph = document.createElement('p');
         hintParagraph.textContent = "No more hints available.";
         hintParagraph.classList.add("no-hints");
