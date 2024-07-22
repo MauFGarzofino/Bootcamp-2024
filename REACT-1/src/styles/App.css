@@ -1,0 +1,151 @@
+:root {
+  --primary-color: #2842da;
+  --secondary-color: #172554;
+  --button-bg: #203e93;
+  --button-shadow: #3b82f6;
+  --button-hover-bg: #60a5fa;
+  --button-hover-shadow: #bfdbfe;
+  --screen-bg: #1e3a8a;
+  --text-color: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .container {
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+  }
+  
+  .calculator {
+    padding: 15px;
+    min-width: 330px;
+    border-radius: 5px;
+    background-color: var(--secondary-color); 
+    color: var(--text-color); 
+    box-shadow: 6px 6px 6px 6px black;
+  }
+  
+  .screen {
+    height: 5rem;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: var(--screen-bg); 
+    border-radius: 10px;
+    overflow: hidden; 
+  }
+  
+  .formula, .output {
+    font-size: 1.25rem;
+    height: 50%;
+    overflow: hidden;
+    max-width: 300px;
+    color: var(--text-color); 
+  }
+  
+  .output {
+    text-align: end;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-areas:
+      'ac ac div mult'
+      'seven eight nine min'
+      'four five six add'
+      'one two three equal'
+      'zero zero dot equal';
+    gap: 0.75rem;
+  }
+  
+  .button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--button-bg); 
+    box-shadow: 4px 4px 0 0 var(--button-shadow);
+    color: #e9da05; 
+    cursor: pointer;
+  }
+
+    #ac {
+      grid-area: ac;
+    }
+    
+    #div {
+      grid-area: div;
+    }
+    
+    #mult {
+      grid-area: mult;
+    }
+    
+    #seven {
+      grid-area: seven;
+    }
+    
+    #eight {
+      grid-area: eight;
+    }
+    
+    #nine {
+      grid-area: nine;
+    }
+    
+    #min {
+      grid-area: min;
+    }
+    
+    #four {
+      grid-area: four;
+    }
+    
+    #five {
+      grid-area: five;
+    }
+    
+    #six {
+      grid-area: six;
+    }
+    
+    #add {
+      grid-area: add;
+    }
+    
+    #one {
+      grid-area: one;
+    }
+    
+    #two {
+      grid-area: two;
+    }
+    
+    #three {
+      grid-area: three;
+    }
+    
+    #equal {
+      grid-area: equal;
+    }
+    
+    #zero {
+      grid-area: zero;
+    }
+    
+    #dot {
+      grid-area: dot;
+    }
+  
+  .button:hover {
+    background-color: var(--button-hover-bg);
+    box-shadow: 4px 4px 0 0 var(--button-hover-shadow);
+  }
