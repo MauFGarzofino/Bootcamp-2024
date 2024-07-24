@@ -1,5 +1,5 @@
 import Seat from './Seat';
-import './SeatGrid.css';
+import './styles/SeatGrid.css';
 
 interface SeatGridProps {
     rows: number;
