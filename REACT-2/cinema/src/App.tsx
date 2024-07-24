@@ -1,13 +1,12 @@
-import './App.css'
-import Seat from './Seat'
+import './App.css';
+import SeatGrid from './SeatGrid';
 
 function App() {
-
   return (
     <>
-      <Seat/>
+      <SeatGrid rows={6} cols={6} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
