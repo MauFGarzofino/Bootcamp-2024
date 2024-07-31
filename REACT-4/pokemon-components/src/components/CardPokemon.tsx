@@ -24,14 +24,8 @@ export const Card = () => {
 
   useEffect(() => {
     if (colors) {
-      document.documentElement.style.setProperty(
-        "--primary-color",
-        colors.primary
-      );
-      document.documentElement.style.setProperty(
-        "--secondary-color",
-        colors.secondary
-      );
+      document.documentElement.style.setProperty("--primary-color", colors.primary);
+      document.documentElement.style.setProperty("--secondary-color", colors.secondary);
       document.documentElement.style.setProperty("--text-color", colors.text);
     }
   }, [colors]);
